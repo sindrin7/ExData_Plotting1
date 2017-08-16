@@ -18,5 +18,5 @@ PowerFeb$DateTime <- strptime(paste(PowerFeb$Date, PowerFeb$Time), "%Y-%m-%d %H:
 
 ### PLOT 2
 plot(PowerFeb$DateTime, PowerFeb$Global_active_power, type = "l", ylab ="Global Active Power (kilowatts)", xlab = "")
-# dev.copy(png, "plot2.png", width = 480, height = 480)
-# dev.off()
+dev.copy(png, "plot2.png", width = 480, height = 480)
+dev.off()
